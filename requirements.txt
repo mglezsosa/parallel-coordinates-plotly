@@ -1,0 +1,4 @@
+IPython
+plotly
+pandas
+pytest
