@@ -1,1 +1,1 @@
-# Parallel coordinates plot using plot.ly
+# Parallel coordinates plotting using plot.ly

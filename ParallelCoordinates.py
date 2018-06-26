@@ -31,7 +31,8 @@ class ParallelCoordinates:
         self._fig = None
         self.layout = go.Layout(
             plot_bgcolor='#FFF',
-            paper_bgcolor='#FFF'
+            paper_bgcolor='#FFF',
+            showlegend=True
         )
         self.plotting_method = plot
         if is_kernel():
@@ -88,7 +89,8 @@ class ParallelCoordinates:
             go.Parcoords(
                 line=dict(
                     color = list(map(lambda x: colormap[x], self.df[class_column])),
-                    colorscale=colorscale
+                    colorscale=colorscale,
+                    showscale=True
                 ),
                 dimensions=dimensions
             )
